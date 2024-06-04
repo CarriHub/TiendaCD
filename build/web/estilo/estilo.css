@@ -1,0 +1,714 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17 abr 2024, 12:44:40
+    Author     : Carri
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+html{
+    background-color: #1b1b1f;
+    color: white;
+    font-family: "Lexend", sans-serif;
+}
+
+body{
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 50;
+}
+nav input{
+    display: none;
+}
+nav label{
+    display: none;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div *{
+    margin: 5px;
+    color: white;
+}
+nav a img{
+    width: 100px;
+}
+
+div.menu_objetos div a img{
+    width: 30px
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+a:hover{
+    color: #92032B;
+}
+
+nav + div{
+    min-height: calc(100dvh - 200px - 124px);
+}
+nav + * + div{
+    min-height: calc(100dvh - 200px - 124px);
+}
+
+.nosotros {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+#nosotros_imagen{
+    height: 600px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+footer{
+    height: 200px;
+    background-color: black;
+    display: flex;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+footer div *{
+    margin: 10px;
+}
+
+footer a img{
+    width: 100px;
+}
+
+
+.novedades{
+    margin-top: -124px;
+    width: 100%;
+    height: 800px;
+    background-image: url("novedades.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.novedades::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.novedades a, .sexo div a{
+    position: relative;
+    z-index: 50;
+    margin-bottom: 6rem;
+    font-weight: bold;
+    color: white;
+    background-color: #92032B;
+    border: none;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.novedades a:hover, .sexo div a:hover{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.sexo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.sexo div{
+    min-width: 33.33%;
+    height: 700px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.sexo::after{
+    content: "";
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.hombre{
+    background-image: url("hombre.jpg");
+}
+.mujer{
+    background-image: url("mujer.jpg");
+}
+.unisex{
+    background-image: url("unisex.jpg");
+}
+
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    text-align: left;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+input {
+    border: 0px solid #92032B;
+    padding: 1rem;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type=submit]{
+    background-color: #92032B;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: #92032B;
+    cursor: pointer;
+}
+
+.gestion,.login,.registro{
+    padding: 2rem 5rem 0rem 5rem;
+}
+
+.menu_redes a img{
+    width: 30px;
+}
+
+.gestion table tbody tr td img{
+    width: 200px;
+}
+
+.gestion form select{
+    width: 100%;
+    padding: 1rem;
+}
+
+.tallas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:1rem;
+}
+.tallas label{
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+}
+
+.login_bd{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login, .registro{
+    width: 700px;
+    align-self: center;
+}
+
+.colecciones{
+    width: 100%;
+    display: flex;
+}
+.colecciones::after{
+    content: "";
+    position: absolute;
+    top: 1500px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prendas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+}
+.prendas .producto{
+    background-color: white;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1.8rem;
+}
+.prendas .producto a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1f;
+}
+.prendas .producto a div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1b1b1f;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.prendas .producto img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.colecciones_individual{
+    width: 20%;
+    height: 700px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+}
+.colecciones_individual a{
+    margin-bottom: 3rem;
+    text-shadow: 0px 0px 5px #1b1b1b;
+    position: relative;
+    z-index: 50;
+}
+.colecciones_individual a span:hover{
+    color: #92032B;
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+
+.info_producto{
+    max-width: 300px;
+}
+
+.producto_individual{
+    display: flex;
+    justify-content: center;
+}
+
+.producto_individual img{
+    height: fit-content;
+    margin-right: 3rem;
+    height: 700px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.producto_individual select{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.carrito_fav form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+}
+.carrito_fav input{
+    width: 70%;
+    height: fit-content;
+}
+.carrito_fav img{
+    width: 50px;
+    margin: 0;
+    height: fit-content;
+}
+.comentarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.comentarios form, .comentarios h5, .comentarios p{
+    width: 900px;
+    align-self: center;
+}
+table.carrito{
+    width: 60%;
+    background-color: white;
+    border-radius: 1rem;
+    color: #1b1b1f;
+    margin-bottom: 1rem;
+}
+table.carrito th, table.carrito td{
+    border: none !important;
+    padding: 1rem;
+}
+table.carrito tbody tr td img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+table.carrito tbody tr td a button, .total a button, table tbody tr td a button{
+    color: white;
+    background-color: #92032B;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+}
+table.carrito tbody tr td a button:hover{
+    color: white;
+    background-color: #1b1b1f;
+    border:none;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.total a button:hover{
+    color: #92032B;
+    background-color: white;
+    cursor: pointer;
+}
+.div_carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.total{
+    width: 555px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+hr{
+    width: 555px;
+}
+.pedidos div{
+    width: 555px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.paginaerror{
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paginaerror h1{
+    color: #92032B;
+    font-size: 10rem;
+    margin: 0;
+}
+
+span.filtro_prendas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#select_filtro{
+    width: 500px;
+    padding: 1rem;
+}
+#select_filtro *{
+    font-size: 1rem;
+}
+.menu_responsivo{
+    display: none;
+}
+@media screen and (max-width: 978px){
+    html{
+        min-height: 100dvh;
+    }
+    nav{
+        display: flex;
+        padding: 0;
+        height: fit-content;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        top: 0;
+        left: 0;
+    }
+    nav div.menu_lista div, div.menu_objetos{
+        display: none;
+    }
+    body nav div.menu_lista a{
+        display: flex;
+        z-index:50;
+    }
+    nav label{
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+        margin: 0;
+        z-index:50;
+    }
+    nav label img{
+        height: 50px;
+    }
+    nav input#menu_imagen:checked ~ .menu_responsivo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: rgba(27, 27, 31, 0.8);
+        padding-top: 120px;
+        margin-top: -120px;
+        padding-bottom: 20px;
+    }
+    .menu_responsivo ul{
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .menu_responsivo ul li, .menu_responsivo ul li a{
+        width: 100%;
+        padding: 5px;
+        margin-right: 40px;
+    }
+    .novedades{
+        background-position: 30%;
+    }
+    .novedades::after{
+        height: 675px;
+    }
+    div.sexo div{
+        width: 100%;
+        height: 370px;
+    }
+    div.sexo div a{
+        margin-bottom: 3rem;
+    }
+    div.sexo::after{
+        top: 676px;
+        height: calc(370px*3);
+    }
+    .colecciones{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .colecciones::after{
+        top: 1786px;
+        height: calc(366px * 3);
+    }
+    .colecciones_individual{
+        width: 50%;
+        height: 366px;
+    }
+
+    .filtro_prendas{
+        margin-top: 120px;
+    }
+    #select_filtro{
+        width: 75%;
+    }
+    .login_bd{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .login_bd .login, .registro{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login_bd .login form, .registro form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .login_bd .login form input, .registro form input{
+        width: auto;
+    }
+    footer{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: bold;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer div.menu_lista{
+        width: 100%;
+        justify-content: space-around;
+    }
+    footer div.menu_lista div{
+        margin: 0;
+    }
+    footer div.menu_lista div a{
+        margin: 0;
+    }
+
+    .nosotros{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 120px;
+        justify-content: center;
+    }
+    table{
+        margin-top: 120px;
+        width: 90%;
+    }
+    table.carrito{
+        background-color: rgba(0,0,0,0);
+        width: fit-content;
+    }
+    table tr{
+        margin-bottom: 20px;
+    }
+    table.carrito tr{
+        background-color: #ffffff;
+    }
+    table thead{
+        display: none;
+    }
+    table.carrito thead{
+        display: none;
+    }
+    table, table tbody, table td, table tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border:none;
+    }
+    table tr{
+        border: 1px solid #ffffff;
+    }
+    table td:before{
+        content: attr(data-label);
+        font-weight: bold;
+    }
+    div.total{
+        width: 100%;
+    }
+    .pedidos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pedidos div{
+        width: 90%;
+        justify-content: start;
+    }
+    hr{
+        width: 90%;
+    }
+    .gestion{
+        margin: 0;
+        padding: 3rem;
+    }
+    .gestion a{
+        margin-bottom: 20px;
+    }
+    td {
+        overflow: hidden;
+    }
+    .producto_individual{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .producto_individual img{
+        width: 80%;
+        margin: 0;
+    }
+    .producto_individual .carrito_fav form{
+        justify-content: space-between;
+    }
+    .producto_individual .carrito_fav form a {
+        width: 18%;
+    }
+    .producto_individual .carrito_fav form a img{
+        width: 100%;
+    }
+    div.comentarios h5, div.comentarios p{
+        width: 80%;
+    }
+    .comentarios form{
+        width: 80%;
+    }
+    .comentarios{
+        width: 100%;
+        padding: 0;
+        height: fit-content;
+    }
+    div.prendas div.producto{
+        margin-top: 120px;
+    }
+    .div_carrito{
+        min-height: 80dvh;
+    }
+}
